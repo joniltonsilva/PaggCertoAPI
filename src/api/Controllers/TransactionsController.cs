@@ -8,7 +8,7 @@ namespace api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class TransactionsController : ControllerBase
     {
         // GET api/values
         [HttpGet]
@@ -24,6 +24,7 @@ namespace api.Controllers
             return "value";
         }
 
+        // Realizar pagamento com cartão de crédito (transação);
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
